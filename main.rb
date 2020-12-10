@@ -1,10 +1,3 @@
-eee1 = Enumerator.new do |y|
-  [1, 2, 3].each do |e|
-    p [:hoge, e]
-    y << e
-  end
-end
-
 class MyEnumerator
   def initialize(&b)
     @fiber = Fiber.new do
